@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подводная охота</title>
+    <link rel="icon" href="galerey/fishMonster.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="oooyes.css">
+</head>
+<body class="fon">
+    <nav>
+        <div class="logo">
+            <a href="#" class="LOOL">
+                <img src="galerey/fishMonster.svg" width="25" height="25" alt="">
+                <p>Подводная охота</p>
+            </a>
+        </div>
+        <div class="o">
+            <ul>
+                <li><a href="#" class="LOOL"><p>О нас</p></a></li>
+                <li><a href="#" class="LOOL"><p>Главная</p></a></li>
+                <li><a href="#" class="LOOL"><p>Связь с нами</p></a></li>
+            </ul>
+        </div>
+        <div class="o">
+            <a href="#" class="LOOL">Тел. 8-800-000-00-00</a>
+        </div>
+        <div class="no">
+            <a href="#" class="OOL">
+                <img src="galerey/bars-3-20-solid.svg" width="25" height="25" alt="">
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        
+
+        <!-- Баннер -->
+        <section id="banner">
+            <div class="container">
+                <div class="banner-content">
+                    <div class="banner-left">
+                        <p>Подводная охота в Саратове и Энгельсе – это наша страсть! 
+                            Мы – команда энтузиастов, готовых поделиться своим опытом и знаниями с вами. На нашем сайте вы найдете всю необходимую информацию для успешной и безопасной охоты в наших водоемах: от выбора снаряжения до секретных мест.</p>
+                        <a href="#" class="button">Записаться</a>
+                        <a href="#" class="button">О нас</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Новости -->
+        <section id="news">
+            <div class="container">
+                <h2>Новости</h2>
+                <div class="news-container">
+                    <div class="news-item">
+                        <img src="galerey/news1.jpg" alt="">
+                        <p><h3>Открытие сезона</h3>В этом году сезон подводной охоты открывается 15 июня! Готовьте снаряжение и приезжайте на наши любимые места.</p>
+                        <a href="#" class="button">Подробнее</a>
+                    </div>
+                    <div class="news-item">
+                        
+                        <p><h3>Новое снаряжение</h3>В нашем магазине поступление нового снаряжения от ведущих производителей. Скидки первым покупателям!</p>
+                        <a href="#" class="button">Подробнее</a>
+                    </div>
+                    <div class="news-item">
+                        
+                        <p><h3>Соревнования</h3>Приглашаем всех желающих принять участие в соревнованиях по подводной охоте, которые пройдут 22 июля на Волге.</p>
+                        <a href="#" class="button">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+</body>
+</html>
+/* Общие стили */
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+body.fon {
+    background-color: #00337a;
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Меню */
+nav {
+    padding: 10px 0;
+    background-color: #036a8f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+nav a.LOOL {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: block;
+}
+
+nav ul li a.LOOL:hover {
+    background-color: #5490C2;
+}
+
+.logo a.LOOL {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo a.LOOL img {
+    margin-right: 5px;
+}
+
+@media (max-width: 810px) {
+    div.o {
+        display: none;
+    }
+}
+
+@media (min-width: 810px) {
+    div.no {
+        display: none;
+    }
+}
+
+nav a.OOL {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Секции */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    text-align: center; /* Центрирование заголовка секции */
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #bbbbbb;
+}
+
+
+
+/* Баннер */
+
+#banner {
+    background-color: #00337a; /* Задаем цвет фона */
+  
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 0;
+}
+
+
+
+#banner .container {
+    max-width: 100%;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: flex-start; /* Выравнивание контента слева */
+    align-items: center;
+    padding: 20px;
+}
+
+.banner-left {
+    flex: 1; /* Чтобы занимал место, даже если пустой */
+    min-width: 30%; /*  Занимает 30% места, чтобы не сжиматься */
+}
+
+.banner-right {
+    flex: 1; /* Занимает место справа */
+    text-align: left;
+    max-width: 50%; /*  Ограничение ширины текста */
+    padding-left: 20px; /*  Добавляем отступ слева от текста */
+}
+
+.banner-right p {
+    margin-bottom: 15px;
+    font-size: 1.2em; /*  Увеличим размер шрифта для читаемости */
+    line-height: 1.5; /*  Увеличим межстрочный интервал для читаемости */
+}
+
+
+
+
+/* Новости */
+#news {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+#news h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.news-item {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.news-item h3 {
+    margin-top: 0;
+    text-align: center; /* Центрирование заголовка новости */
+}
+
+.news-item p {
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.news-item a {
+    display: block; /* Чтобы кнопка занимала всю ширину */
+    text-align: center; /* Центрирование текста на кнопке */
+    margin-top: auto; /* Прижимаем кнопку к низу */
+}
+
+
